@@ -1,0 +1,317 @@
+@import "~normalize.css";
+
+.wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 980px;
+  height: 630px;
+}
+
+.university-location {
+  width: 100%;
+  height: 100%;
+  background: url(../images/map/location_bg.png) no-repeat;
+}
+
+.university-location__furniture {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.furniture {
+  width: 980px;
+  height: 605px;
+  background: url(../images/map/furniture.png) no-repeat;
+}
+
+.furniture__bush {
+  position: absolute;
+  top: 475px;
+  left: 355px;
+}
+
+.bush {
+  width: 55px;
+  height: 69px;
+  background: url(../images/map/bush.png) no-repeat;
+}
+
+.university-location__way {
+  position: absolute;
+  top: 21px;
+  left: 78px;
+}
+
+.way {
+  width: 896px;
+  height: 521px;
+  background: url(../images/map/way.png) no-repeat;
+}
+
+.university-location__first-course-label {
+  position: absolute;
+  top: 503px;
+  left: 425px;
+}
+
+.first-course-label {
+  width: 68px;
+  height: 40px;
+  background: url(../images/map/first_course.png) no-repeat;
+}
+
+.university-location__graduation {
+  position: absolute;
+  top: 148px;
+  left: 862px;
+}
+
+.graduation {
+  width: 105px;
+  height: 58px;
+  background: url(../images/map/final.png) no-repeat;
+}
+
+.extreme-point {
+  width: 23px;
+  height: 13px;
+  box-shadow: 0 0 8px 3px rgba(253, 253, 253, 0.75);
+  border-radius: 50%;
+  background: transparent;
+}
+
+.university-location__extreme-point_start {
+  position: absolute;
+  top: 499px;
+  left: 433px;
+  background: url(../images/map/start_bg.png) no-repeat center;
+}
+
+.university-location__extreme-point_final {
+  position: absolute;
+  top: 165px;
+  left: 873px;
+  background: url(../images/map/final_bg.png) no-repeat center;
+}
+
+.player {
+  width: 21px;
+  height: 69px;
+}
+
+.university-location__player {
+  position: absolute;
+  top: 438px;
+  left: 434px;
+}
+
+.figurine {
+  width: 100%;
+  height: 100%;
+}
+
+.player__figurine_girl {
+  background: url(../images/map/figurine.png) no-repeat;
+}
+
+.point {
+  width: 16px;
+  height: 10px;
+}
+
+.university-location__point {
+  position: absolute;
+}
+
+.university-location__point_black {
+  width: 100%;
+  height: 100%;
+  background: url(../images/map/black_point.png) no-repeat;
+}
+
+.university-location__point_gray {
+  width: 100%;
+  height: 100%;
+  background: url(../images/map/gray_point.png) no-repeat;
+}
+
+.point-delimeter {
+  width: 25px;
+  height: 17px;
+}
+
+.university-location__point-delimeter {
+  position: absolute;
+}
+
+.university-location__point-delimeter_red {
+  width: 100%;
+  height: 100%;
+  background: url(../images/map/red_point.png) no-repeat;
+}
+
+.friends-block {
+  display: flex;
+  align-items: center;
+  width: 536px;
+  height: 63px;
+  background: url(../images/map/friends_bg.png) no-repeat;
+}
+
+.university-location__friends-block {
+  position: absolute;
+  top: 549px;
+  left: 4px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.friends-block__friends-list-wrapper {
+  display: flex;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.friends-list {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 480px;
+  height: 51px;
+}
+
+.friend {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 51px;
+  background: url(../images/map/friend_bg.png) no-repeat center;
+}
+
+.friends-list__friend {
+  flex: none;
+  margin-right: 10px;
+}
+
+.friends-list__friend:last-child {
+  margin-right: 0;
+}
+
+.friends-list__friend:first-child {
+  margin-left: 5px;
+}
+
+.friend__icon {
+  position: absolute;
+  bottom: 2px;
+  width: 28px;
+  height: 38px;
+  background: url(../images/map/friend_default_icon.png) no-repeat center;
+}
+
+.friend__plus-btn {
+  cursor: pointer;
+  position: absolute;
+  top: -9px;
+  right: -7px;
+  width: 34px;
+  height: 35px;
+  background: url(../images/map/plus.png) no-repeat center;
+}
+
+.arrow {
+  cursor: pointer;
+  width: 14px;
+  height: 27px;
+}
+
+.friends-block__arrow_left {
+  margin-left: 10px;  
+  background: url(../images/map/left_arrow.png) no-repeat center;
+}
+
+.friends-block__arrow_right {
+  margin-right: 10px;
+  background: url(../images/map/right_arrow.png) no-repeat center;
+}
+
+.chat-btn {
+  /* cursor: pointer; */
+  width: 65px;
+  height: 60px;
+  background: url(../images/map/chat.png) no-repeat center;
+}
+
+.university-location__chat-btn {
+  position: absolute;
+  top: 552px;
+  left: 543px;
+}
+
+.to-univ-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 202px;
+  height: 63px;
+  background: url(../images/map/to_univ_btn_bg.png) no-repeat center;
+}
+
+.to-univ-btn__content {
+  width: 158px;
+  height: 23px;
+  background: url(../images/map/to_univ_btn_text.png) no-repeat center;
+}
+
+.university-location__to-univ-btn {
+  position: absolute;
+  top: 549px;
+  left: 616px;
+}
+
+.mail-btn {
+  /* cursor: pointer; */
+  width: 64px;
+  height: 60px;
+  background: url(../images/map/mail.png) no-repeat center;
+}
+
+.university-location__mail-btn {
+  position: absolute;
+  top: 551px;
+  left: 827px;
+}
+
+.rating-btn {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66px;
+  height: 61px;
+  background: url(../images/map/rating_btn_bg.png) no-repeat center;
+}
+
+.rating-btn__content {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 61px;
+  height: 50px;
+  background: url(../images/map/rating_btn_content.png) no-repeat center;
+}
+
+.university-location__rating-btn {
+  position: absolute;
+  top: 551px;
+  left: 897px;
+}

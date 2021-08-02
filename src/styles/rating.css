@@ -1,0 +1,245 @@
+@import "~normalize.css";
+@import "roboto.css";
+
+.rating-modal {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.rating-modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .5);
+}
+
+.rating-modal__rating-window {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 523px;
+  height: 455px;
+  margin: auto;
+}
+
+.rating-modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/rating/rating_modal_bg.png) no-repeat center;
+}
+
+.rating-modal__header-bg {
+  position: absolute;
+  top: -11px;
+  width: 264px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/rating/rating_modal_header_bg.png) no-repeat center;
+}
+
+.rating-modal__header-content {
+  position: absolute;
+  top: -7px;
+  width: 211px;
+  height: 26px;
+  background: url(../images/rating/rating_modal_header_content.png) no-repeat center;
+}
+
+.rating-modal__close {
+  cursor: pointer;
+  position: absolute;
+  top: 14px;
+  right: 17px;
+  align-self: flex-end;
+  width: 26px;
+  height: 26px;
+  background: url(../images/rating/rating_modal_close.png) no-repeat center;
+}
+
+.rating-modal__body-bg {
+  position: absolute;
+  top: 94px;
+  width: 464px;
+  height: 324px;
+  background: url(../images/rating/rating_modal_body_bg.png) no-repeat center;
+}
+
+.rating-modal__table-wraper {
+  position: absolute;
+  top: 126px;
+  height: 261px;
+  width: 403px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.rating-modal__table-wraper::-webkit-scrollbar {
+  display: none;
+}
+
+.rating-modal__table-header-bg {
+  position: absolute;
+  top: 0;
+  width: 403px;
+  height: 29px;
+  background: url(../images/rating/table_header_bg.png) no-repeat center;
+}
+
+.rating-modal__table-header-place {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  width: 39px;
+  height: 10px;
+  background: url(../images/rating/table_header_place.png);
+}
+
+.rating-modal__table-header-full-name {
+  position: absolute;
+  top: 10px;
+  left: 99px;
+  width: 88px;
+  height: 11px;
+  background: url(../images/rating/table_header_full_name.png);
+}
+
+.rating-modal__table-header-experience {
+  position: absolute;
+  top: 10px;
+  left: 327px;
+  width: 36px;
+  height: 11px;
+  background: url(../images/rating/table_header_experience.png);
+}
+
+.rating-modal__table-line-bg {
+  position: absolute;
+  width: 403px;
+  height: 27px;
+  background: url(../images/rating/table_line_bg.png) no-repeat center;
+}
+
+.rating-modal__table-line-place {
+  position: absolute;
+  left: 22px;
+  width: 30px;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.rating-modal__table-line-icon-bg {
+  position: absolute;
+  left: 66px;
+  width: 30px;
+  height: 29px;
+  background: url(../images/rating/table_line_icon_bg.png);
+}
+
+.rating-modal__table-line-icon {
+  position: absolute;
+  left: 69px;
+}
+
+.rating-modal__table-line-full-name {
+  position: absolute;
+  left: 101px;
+  width: 210px;
+  height: 14px;
+  display: flex;
+  justify-content: start;
+}
+
+.rating-modal__table-line-experience {
+  position: absolute;
+  left: 329px;
+  width: 40px;
+  height: 11px;
+  display: flex;
+  justify-content: start;
+}
+
+.rating_bg_fill {
+  /* Style for "Layer 412" pos: X: 269 px Y: 176 px */
+  width: 464px;
+  height: 324px;
+}
+
+.rating_table_header {
+  /* Style for "Layer 392" pos: X: 300 px Y: 208 px */
+  width: 403px;
+  height: 29px;
+}
+
+.rating_table_header__text_place {
+  /* Style for "Layer 402" pos: X: 316 px Y: 218 px */
+  width: 39px;
+  height: 10px;
+}
+
+.rating_table_header__text_full-name {
+  /* Style for "Layer 403" pos: X: 399 px Y: 218 px */
+  width: 88px;
+  height: 11px;
+}
+
+.rating_table_header__text_exp {
+  /* Style for "Layer 404" pos: X: 627 px Y: 218 px */
+  width: 36px;
+  height: 11px;
+}
+
+.rating_table_line {
+  /* Style for "Layer 405" pos: X: 300 px Y: 244 px */
+  width: 403px;
+  height: 27px;
+}
+
+.rating_table_line_place-number {
+  /* Style for "Layer 406" pos: X: 334 px Y: 252 px */
+  width: 5px;
+  height: 12px;
+}
+
+.rating_ava_bg {
+  /* Style for "Layer 408" pos: X: 366 px Y: 243 px */
+  width: 30px;
+  height: 29px;
+}
+
+.rating_table_line_full-name-placeholder {
+  /* Style for "Layer 407" pos: X: 401 px Y: 251 px */
+  width: 67px;
+  height: 14px;
+}
+
+.rating_table_line_exp-number {
+  /* Style for "Layer 409" pos: X: 629 px Y: 252 px */
+  width: 32px;
+  height: 11px;
+}
+
+.rating_table_close-btn {
+  /* Style for "Layer 389" pos: X: 720 px Y: 96 px */
+  width: 26px;
+  height: 26px;
+}
+
+
+
+
