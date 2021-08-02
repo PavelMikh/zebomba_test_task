@@ -9,7 +9,8 @@ module.exports = {
   entry: './index.js',
   output: {
     filename: '[contenthash].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'images/[hash][ext][query]'
   },
   devServer: {
     port: 4200,
@@ -40,8 +41,8 @@ module.exports = {
         }, 'css-loader'],
       },
       {
-        test: /\.(png|jpg|svg|gif)$/,
-        use: ['file-loader']
+        test: /\.(png|jpe?g|svg|gif)$/i,
+        type: 'asset/resource'
       },
       {
         test: /\.(ttf|woff|woff2|eot)$/,

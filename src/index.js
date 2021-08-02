@@ -1,6 +1,6 @@
 import './styles/map.css'
 import './styles/rating.css'
-console.log('tyu')
+
 /*
 pos for points:
 0: X: 433px Y: 499px start
