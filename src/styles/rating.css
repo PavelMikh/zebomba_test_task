@@ -190,5 +190,5 @@
   width: 40px;
   height: 11px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-end;
 }

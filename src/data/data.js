@@ -375,7 +375,7 @@ export const firstLineElementsCoords = {
 	iconBgTop: 35,
 	fullNameLeft: 101,
 	fullNameTop: 42,
-	experienceLeft: 329,
+	experienceLeft: 320,
 	experienceTop: 42
 }
 
