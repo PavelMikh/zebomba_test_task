@@ -19,8 +19,7 @@ module.exports = {
   resolve: {
     extensions: ['.js'],
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-      '@core': path.resolve(__dirname, 'src/core/')
+      core: path.resolve(__dirname, 'src/core/')
     }
   },
   plugins: [

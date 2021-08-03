@@ -1,4 +1,4 @@
-import {DomListener} from '@core/DomListener'
+import {DomListener} from 'core/DomListener'
 
 export class GameComponent extends DomListener {
   constructor($root, options = {}) {

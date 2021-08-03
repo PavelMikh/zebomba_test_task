@@ -30,6 +30,14 @@ class Dom {
     return this
   }
 
+  on(eventType, callback) {
+    this.$el.addEventListener(eventType, callback)
+  }
+
+  off(eventType, callback) {
+    this.$el.removeEventListener(eventType, callback)
+  }
+
   append(node) {
     if (node instanceof Dom) {
       node = node.$el
@@ -43,8 +51,19 @@ class Dom {
     return this
   }
 
+  closest(selector) {
+    return $(this.$el.closest(selector))
+  }
+
+  scrollLeft(step) {
+    this.$el.scrollLeft += step
+  }
+
   get data() {
-    return this.$el.dataset
+    if (this.$el) {
+      return this.$el.dataset
+    }
+    return null
   }
 
   find(selector) {
@@ -63,6 +82,23 @@ class Dom {
         })
   }
 
+  coords(newCoords = {}) {
+    if (newCoords !== {}) {
+      const {left, top} = newCoords
+      $(this.$el).css({
+        "left":left + 'px',
+        "top":top + 'px'
+      })
+
+      return
+    }
+    
+    return {
+      left: this.$el.offsetLeft,
+      top: this.$el.offsetTop
+    }
+  }
+
   getStyles(styles = []) {
     return styles.reduce((result, s) => {
       result[s] = this.$el.style[s]
@@ -70,6 +106,10 @@ class Dom {
     }, {})
   }
 
+  dimensions() {
+    return this.$el.getBoundingClientRect()
+  }
+ 
   addClass(className) {
     this.$el.classList.add(className)
   }
