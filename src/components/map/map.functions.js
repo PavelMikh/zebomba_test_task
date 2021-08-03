@@ -65,7 +65,27 @@ export function isRatingButton(event) {
   return $(event.target).data.type === "rating"
 }
 
-export function ratingButtonClickHandler(event) {
-  const target = event.target
-  console.log('target: ', target)
+export function ratingButtonClickHandler($root) {
+  const $overlay = $root.find('[data-id="overlay"]')
+  const $ratingWindow = $root.find('[data-id="rating-window"]')
+  $overlay.addClass('rating-open')
+  $ratingWindow.addClass('rating-open')
+}
+
+export function isRatingCloseButton(event) {
+  return $(event.target).data.id === "rating-close-btn"
+}
+
+export function ratingCloseButtonHandler($root) {
+  const delay = 300
+  const $overlay = $root.find('[data-id="overlay"]')
+  const $ratingWindow = $root.find('[data-id="rating-window"]')
+  $overlay.removeClass('rating-open')
+  $ratingWindow.removeClass('rating-open')
+  $overlay.addClass('rating-hide')
+  $ratingWindow.addClass('rating-hide')
+  setTimeout(() => {
+    $overlay.removeClass('rating-hide')
+    $ratingWindow.removeClass('rating-hide')
+  }, delay)
 }

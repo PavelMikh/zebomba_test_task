@@ -6,7 +6,9 @@ import {
   isToUniversityButton,
   toUniversityButtonClickHandler,
   isRatingButton,
-  ratingButtonClickHandler
+  ratingButtonClickHandler,
+  isRatingCloseButton,
+  ratingCloseButtonHandler
 } from './map.functions'
 
 export class Map extends GameComponent {
@@ -47,7 +49,11 @@ export class Map extends GameComponent {
     }
 
     if (isRatingButton(event)) {
-      ratingButtonClickHandler(event)
+      ratingButtonClickHandler(this.$root)
+    }
+
+    if (isRatingCloseButton(event)) {
+      ratingCloseButtonHandler(this.$root)
     }
   }
 }

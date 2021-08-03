@@ -192,12 +192,12 @@ export function createMap() {
     </div>
   </div>
   <div class="rating-modal">
-    <div class="rating-modal__overlay">
-      <div class="rating-modal__rating-window">
+    <div class="rating-modal__overlay" data-id="overlay">
+      <div class="rating-modal__rating-window" data-id="rating-window">
         <div class="rating-modal__bg"></div>
         <div class="rating-modal__header-bg"></div>
         <div class="rating-modal__header-content"></div>
-        <div class="rating-modal__close"></div>
+        <div class="rating-modal__close" data-id="rating-close-btn"></div>
         <div class="rating-modal__body-bg"></div>
         <div class="rating-modal__table-wraper">
           <div class="rating-modal__table-header-bg"></div>

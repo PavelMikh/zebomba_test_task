@@ -11,7 +11,8 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 0);
+  transition: background .3s ease-in;
 }
 
 .rating-modal__rating-window {
@@ -26,6 +27,43 @@
   width: 523px;
   height: 455px;
   margin: auto;
+  transform: translateY(-300px);
+}
+
+.rating-modal__rating-window {
+  transform: translateY(-600px);
+  transition: transform .3s ease-in;
+}
+
+.rating-modal__overlay{
+  opacity: 0;
+  z-index: -1;
+}
+
+.rating-open {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.rating-hide {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.rating-modal__rating-window.rating-open {
+  transform: translateY(0);
+}
+
+.rating-modal__overlay.rating-open {
+  background: rgba(0, 0, 0, .5)
+}
+
+.rating-modal__rating-window.rating-hide {
+  transform: translateY(-600);
+}
+
+.rating-modal__overlay.rating-hide {
+  background: rgba(0, 0, 0, 0)
 }
 
 .rating-modal__bg {
