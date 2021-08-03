@@ -177,6 +177,13 @@
   justify-content: center;
 }
 
+.rating-modal__table-line-icon-bg {
+  position: absolute;
+  width: 30px;
+  height: 29px;
+  background: url(../images/rating/table_line_icon_bg.png) no-repeat center;
+}
+
 .rating-modal__table-line-full-name {
   position: absolute;
   width: 210px;
