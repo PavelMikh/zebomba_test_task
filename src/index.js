@@ -1,5 +1,4 @@
-import './styles/map.css'
-import './styles/rating.css'
+import './styles/index.css'
 
 /*
 pos for points:
