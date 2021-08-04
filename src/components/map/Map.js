@@ -39,7 +39,6 @@ export class Map extends GameComponent {
   }
 
   onClick(event) {
-    const target = event.target
     if (isArrow(event)) {
       arrowClickHandler(event)
     }
